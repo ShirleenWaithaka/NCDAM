@@ -1,30 +1,29 @@
-import React from 'react';
-import { useNavigate } from "react-router";
-import '../styles/WelcomePage.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/WelcomePage.css";
+
+import logo from "../Components/images/NCDAM.png";
 
 const WelcomePage = () => {
-  const navigate = useNavigate();
-
-  const handleSignIn = () => {
-    console.log("button clicked")
-    navigate ("/signin");
-  };
-
   return (
-    <div className="welcome-container">
+    <div className="body">
       <nav className="navbar">
         <div className="logo">
-          <img src="./Components/images/logo.png"alt="Church Logo" />
+          <img src={logo} alt="Church Logo" />
         </div>
         <div className="nav-buttons">
-          <button className="nav-btn" onClick={handleSignIn} type='button'>SignIn</button>
+          <Link to="/signup" className="signup-btn">SIGN UP</Link>
+          <Link to="/signin" className="signin-btn">SIGN IN</Link>
+          <Link to="/pastors" className="pastors-btn">OUR PASTORS</Link>
+          <Link to="/services" className="services-btn">OUR SERVICES</Link>
+          
         </div>
       </nav>
-
+      
       <main className="main-content">
         <div className="welcome-box">
           <h1 className="welcome-text">WELCOME TO</h1>
-          <h2 className="church-name">CHURCH NAME HERE</h2>
+          <h1 className="church-name">NAIROBI CHAPEL DAM</h1>
           <p className="subtitle">Where the glory dwells in our hearts daily</p>
         </div>
       </main>

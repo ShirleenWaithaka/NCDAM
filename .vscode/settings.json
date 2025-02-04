@@ -18,6 +18,13 @@
             "name": "Postgress",
             "database": "postgres",
             "username": "postgres.bmkjhzotrhchferoexsh"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "PostgreSQL",
+            "connectString": "postgresql://backend_87ez_user:Dux1vyYtryobgyX6ugiarS0GOvhRKCuu@dpg-cudn8lq3esus73c7ufeg-a.oregon-postgres.render.com/backend_87ez",
+            "name": "Backend"
         }
     ]
 }

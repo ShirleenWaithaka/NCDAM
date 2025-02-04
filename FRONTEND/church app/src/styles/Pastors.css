@@ -1,0 +1,94 @@
+.pastors-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../Components/images/Church People.jpg'); /* Update with your church interior image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    position: relative;
+  }
+  
+
+  .pastors-title {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .pastors-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .pastor-card {
+    width: 300px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .pastor-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pastor-image-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pastor-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .pastor-name {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .pastor-role {
+    color: #666;
+    font-size: 1.1rem;
+  }
+  
+ 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pastors-grid {
+      gap: 20px;
+    }
+  
+    .pastor-card {
+      width: 250px;
+    }
+  
+    .pastor-image-container {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .pastors-title {
+      font-size: 2rem;
+    }
+  }
